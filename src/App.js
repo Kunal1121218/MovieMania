@@ -25,10 +25,10 @@ const App = () => {
     <BrowserRouter>
         <Navbar/>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/search" element={<Search />} />
-          <Route path="/genre" element={<Genre />} />
-          <Route path="/wishList" element={<WishList />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/search" element={<Search />} />
+          <Route exact path="/genre" element={<Genre />} />
+          <Route exact path="/wishList" element={<WishList />} />
         </Routes>
     </BrowserRouter>
     {showDetails && <MovieDetails/>}
